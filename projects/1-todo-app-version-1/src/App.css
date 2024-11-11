@@ -1,0 +1,23 @@
+.kg-todo-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.kg-todo-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.kg-row {
+    margin: 10px 3px;
+}
+
+.kg-row input {
+    width: 100%;
+}
+
+.kg-btn {
+    min-width: 80px;
+}
