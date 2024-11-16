@@ -1,12 +1,10 @@
-import { useContext, useRef } from 'react';
+import { useRef } from 'react';
 import style from './AddTodo.module.css';
 import { IoAdd } from "react-icons/io5";
-import { TodoItemContext } from '../store/todo-item-context';
 
 
 // eslint-disable-next-line react/prop-types
-const AddTodo = () => {
-  const {insertItem} = useContext(TodoItemContext)
+const AddTodo = ({insertItem}) => {
   const todoName = useRef('');
   const dueDate = useRef('');
   const handleItem = (event) => {

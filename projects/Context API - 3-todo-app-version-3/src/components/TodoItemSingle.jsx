@@ -1,11 +1,8 @@
-import { useContext } from 'react';
 import style from './TodoItemSingle.module.css';
 import { MdDeleteOutline } from "react-icons/md";
-import { TodoItemContext } from '../store/todo-item-context';
 
 // eslint-disable-next-line react/prop-types
-const TodoItemSingle = ({name, date}) => {
-  const {handleDeleteItem} = useContext(TodoItemContext)
+const TodoItemSingle = ({name, date, onDelete}) => {
     return(
         <div className={`row ${style['kg-row']}  kg-row`}>
           <div className="col-6">
@@ -15,7 +12,7 @@ const TodoItemSingle = ({name, date}) => {
             {date}
           </div>
           <div className="col-2">
-            <button type="button" className={`btn btn-danger ${style['kg-btn']}`} onClick={() => handleDeleteItem(name)}><MdDeleteOutline /></button>
+            <button type="button" className={`btn btn-danger ${style['kg-btn']}`} onClick={() => onDelete(name)}><MdDeleteOutline /></button>
           </div>
         </div>
     )
