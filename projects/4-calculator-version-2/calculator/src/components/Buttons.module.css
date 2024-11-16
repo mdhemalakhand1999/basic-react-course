@@ -1,0 +1,6 @@
+.calculator-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    justify-content: center;
+}
